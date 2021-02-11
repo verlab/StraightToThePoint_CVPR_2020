@@ -248,7 +248,7 @@ The training script will save the model in the [semantic_encoding/models](semant
 
 ### Training the Agent
 
-  - To train the agent, you will need the features produced the VDAN model. You can have these features [here](link). To get it via terminal, use:
+  - To train the agent, you will need the features produced the VDAN model. You can have these features [here](https://github.com/verlab/StraightToThePoint_CVPR_2020/releases/download/v1.0.0/youcookii_feats_vdan.zip). To get it via terminal, use:
 
     ```bash
     # Download YouCook2's VDAN feats
@@ -352,4 +352,4 @@ Acknowledgements
 
 We thank the agencies CAPES, CNPq, FAPEMIG, and Petrobras for funding different parts of this work. We also thank NVIDIA Corporation for the donation of a Titan Xp GPU.
 
-Enjoy it! :smiley:
+### Enjoy it! :smiley:
