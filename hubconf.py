@@ -44,7 +44,7 @@ def SemanticFastForward_RL(pretrained=False, progress=False, sent_emb_size=1024,
     model.vdan.apply(init_weights)  # Apply function "init_weights" to all FC layers of our model.
 
     if pretrained:
-        state_dict = torch.hub.load_state_dict_from_url('https://github.com/washingtonsk8/StraightToThePoint_CVPR2020/releases/download/v0.9.0/sff_rl_vdan_model-5b50b542.pth',
+        state_dict = torch.hub.load_state_dict_from_url('https://github.com/verlab/StraightToThePoint_CVPR_2020/releases/download/v1.0.0/sff_rl_vdan_model-5b50b542.pth',
                                                         progress=progress)
 
         model.vdan.load_state_dict(state_dict['vdan_state_dict'])

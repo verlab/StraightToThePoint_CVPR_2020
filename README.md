@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verlab/2020-cvpr-ramos-straight-code/blob/code_release/StraightToThePoint_CVPR2020.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verlab/StraightToThePoint_CVPR_2020/blob/main/StraightToThePoint_CVPR_2020.ipynb)
 
 <b>Straight to the Point: Fast-Forwarding Videos via Reinforcement Learning Using Textual Data</b>
 <br>[[Project Page]](https://www.verlab.dcc.ufmg.br/semantic-hyperlapse/cvpr2020) [[Paper]](https://openaccess.thecvf.com/content_CVPR_2020/html/Ramos_Straight_to_the_Point_Fast-Forwarding_Videos_via_Reinforcement_Learning_Using_CVPR_2020_paper.html) [[Video]](https://www.youtube.com/watch?v=v6BNv_00wq4)
@@ -47,7 +47,7 @@ PyTorch Hub Model
 ```python
 import torch
 
-model = torch.hub.load('washingtonsk8/StraightToThePoint_CVPR2020:main', 'SemanticFastForward_RL', pretrained=True)
+model = torch.hub.load('verlab/StraightToThePoint_CVPR_2020:main', 'SemanticFastForward_RL', pretrained=True)
 model.cuda()
 model.eval()
 
@@ -65,10 +65,10 @@ We provide convinient demos in CoLab.
 
 |            **Description**     |  **Link**                     |
 |--------------------------------|-------------------------------|
-| Process a video with our agent | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](StraightToThePoint_CVPR2020.ipynb) |
-| Train VDAN using MSCOCO | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](demos/train_VDAN.ipynb) |
-| Train the Agent using YouCook2 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](demos/train_Agent.ipynb) |
-| Extract VDAN feats from a single image | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](demos/train_Agent.ipynb) |
+| Process a video with our agent | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verlab/StraightToThePoint_CVPR_2020/blob/main/StraightToThePoint_CVPR_2020.ipynb) |
+| Train VDAN using MSCOCO | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verlab/StraightToThePoint_CVPR_2020/blob/main/demos/train_VDAN.ipynb) |
+| Train the Agent using YouCook2 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verlab/StraightToThePoint_CVPR_2020/blob/main/demos/train_Agent.ipynb) |
+| Extract VDAN feats from a single image | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verlab/StraightToThePoint_CVPR_2020/blob/main/demos/train_Agent.ipynb) |
 
 
 Data \& Code Preparation
@@ -92,8 +92,8 @@ If you want to download the code and run it by yourself in your environment, or 
 - ### 2. Clone the repo and install the dependencies
 
    ```bash
-   git clone https://github.com/verlab/2020-cvpr-ramos-straight-code.git
-   cd 2020-cvpr-ramos-straight-code
+   git clone https://github.com/verlab/StraightToThePoint_CVPR_2020.git
+   cd StraightToThePoint_CVPR_2020
    pip install -r requirements.txt
    ```
 <!-- 2. Install COCOAPI:
@@ -252,16 +252,16 @@ The training script will save the model in the [semantic_encoding/models](semant
 
     ```bash
     # Download YouCook2's VDAN feats
-    wget -O resources/YouCook2/VDAN/youcookii_vdan_feats.zip https://github.com/washingtonsk8/raightToThePoint_CVPR2020/releases/download/v0.9.0/youcookii_feats_vdan.zip
+    wget -O resources/YouCook2/VDAN/youcookii_vdan_feats.zip https://github.com/verlab/StraightToThePoint_CVPR_2020/releases/download/v1.0.0/youcookii_feats_vdan.zip
     unzip -q resources/YouCook2/VDAN/youcookii_vdan_feats.zip -d resources/YouCook2/VDAN/
     rm resources/YouCook2/VDAN/youcookii_vdan_feats.zip
     ```
   
-  - If you want to extract them by yourself, you can have a VDAN pretrained model by following the instructions in the previous step or downloading a pretrained one we provide [here](https://github.com/washingtonsk8/StraightToThePoint_CVPR2020/releases/download/v0.9.0/vdan_model_pretrained.pth). In terminal, use: 
+  - If you want to extract them by yourself, you can have a VDAN pretrained model by following the instructions in the previous step or downloading a pretrained one we provide [here](https://github.com/verlab/StraightToThePoint_CVPR_2020/releases/download/v1.0.0/vdan_model_pretrained.pth). In terminal, use: 
 
     ```bash
     # Download the pretrained model
-    wget -O semantic_encoding/models/vdan_pretrained_model.pth https://github.com/washingtonsk8/StraightToThePoint_CVPR2020/releases/download/v0.9.0/vdan_pretrained_model.pth
+    wget -O semantic_encoding/models/vdan_pretrained_model.pth https://github.com/verlab/StraightToThePoint_CVPR_2020/releases/download/v1.0.0/vdan_pretrained_model.pth
     ```
 
   - Now, prepare the data for training...
