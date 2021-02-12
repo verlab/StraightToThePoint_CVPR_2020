@@ -1,4 +1,3 @@
-from experiment_to_video_mapping import Experiment2VideoMapping
 import argparse
 import json
 import sys
@@ -10,7 +9,7 @@ from tqdm import tqdm
 
 file_path = os.path.abspath(__file__)
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(file_path))) + '/semantic_encoding/_utils/')
-
+from experiment_to_video_mapping import Experiment2VideoMapping
 
 def parse_args(args):
     """ Parse arguments from command line input
