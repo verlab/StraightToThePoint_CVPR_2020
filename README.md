@@ -257,7 +257,7 @@ The training script will save the model in the [semantic_encoding/models](semant
     rm resources/YouCook2/VDAN/youcookii_vdan_feats.zip
     ```
   
-  - If you want to extract them by yourself, you can have a VDAN pretrained model by following the instructions in the previous step or downloading a pretrained one we provide [here](https://github.com/verlab/StraightToThePoint_CVPR_2020/releases/download/v1.0.0/vdan_model_pretrained.pth). In terminal, use: 
+  - If you want to extract them by yourself, you can have a VDAN pretrained model by following the instructions in the previous step or downloading a pretrained one we provide [here](https://github.com/verlab/StraightToThePoint_CVPR_2020/releases/download/v1.0.0/vdan_pretrained_model.pth). In terminal, use: 
 
     ```bash
     # Download the pretrained model
