@@ -7,6 +7,8 @@ import torch.nn as nn
 from datetime import datetime
 from pycocotools.coco import COCO
 from tqdm import tqdm
+import sys
+sys.path.append(os.path.dirname(__file__))
 from models import VDAN
 
 def load_embeddings_matrix(embeddings_file, embeddings_dim, use_fake_embeddings=False):
