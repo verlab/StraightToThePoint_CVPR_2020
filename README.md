@@ -68,7 +68,7 @@ We provide convinient demos in CoLab.
 | Process a video with our agent | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verlab/StraightToThePoint_CVPR_2020/blob/main/StraightToThePoint_CVPR_2020.ipynb) |
 | Train VDAN using MSCOCO | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verlab/StraightToThePoint_CVPR_2020/blob/main/demos/train_VDAN.ipynb) |
 | Train the Agent using YouCook2 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verlab/StraightToThePoint_CVPR_2020/blob/main/demos/train_Agent.ipynb) |
-| Extract VDAN feats from a single image | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verlab/StraightToThePoint_CVPR_2020/blob/main/demos/train_Agent.ipynb) |
+| Extract VDAN feats from a single image | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verlab/StraightToThePoint_CVPR_2020/blob/main/demos/bonus.ipynb) |
 
 
 Data \& Code Preparation
