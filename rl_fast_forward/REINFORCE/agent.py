@@ -161,6 +161,7 @@ class Agent:
             avg_epoch_losses.append(epoch_losses.detach().cpu())
             avg_critic_losses.append(critic_losses.detach().cpu())
 
+            self.writer.add_scalar('Rewards_{}/_overall_avg_reward'.format(dataset_name), np.mean([scores[exp_key] for exp_key in exp_keys]), i_epoch)
             
             self.optimizer.zero_grad()
             epoch_losses.backward()  # Computes the derivative of loss with respect to theta (dLoss/dTheta)

@@ -133,6 +133,7 @@ def test(args):
         test_set = [exp for exp in experiments if Experiment2VideoMapping(exp).split_type in ['validation', 'test']]
         
         test_envs = {exp_key: VideoEnvironment(args.semantic_encoder_model_filename, args.user_document_filename, experiment_name=exp_key, batch_size=args.batch_size) for exp_key in test_set}
+        env = test_envs[test_set[0]]
 
         json_sf = {'info': {'version': 'v1.1_{}'.format(dt.now().strftime('%Y%m%d_%H%M%S')), 'dataset': args.dataset}, 'data': {}}
 
