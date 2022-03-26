@@ -339,7 +339,7 @@ Belo Horizonte - Minas Gerais -Brazil
 Laboratory
 ---
 
-![VeRLab](http://www.dcc.ufmg.br/dcc/sites/default/files/public/verlab-logo.png) | ![UFMG](https://logodownload.org/wp-content/uploads/2015/02/ufmg-logo-5-1.png)
+![VeRLab](https://dcc.ufmg.br/wp-content/uploads/logo-verlab-medium.png) | ![UFMG](https://logodownload.org/wp-content/uploads/2015/02/ufmg-logo-5-1.png)
 --- | ---
 
 **VeRLab:** Laboratory of Computer Vison and Robotics   
